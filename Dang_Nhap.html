@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Trang Đăng Nhập</title>
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">        <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                            <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">                                      <!-- Font awesome -->
+  <link rel="stylesheet" href="css/tooplate-style.css">                                           <!-- Templatemo style -->
+
+  <script>
+    var renderPage = true;
+
+    if (navigator.userAgent.indexOf('MSIE') !== -1
+      || navigator.appVersion.indexOf('Trident/') > 0) {
+      /* Microsoft Internet Explorer detected in. */
+      alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+      renderPage = false;
+    }
+  </script>
+</head>
+<body>
+        <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="tm-main">
+
+    <div class="tm-welcome-section">
+      <div class="container tm-navbar-container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar navbar-expand-sm">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a href="Trang_Chu.html" class="nav-link tm-nav-link tm-text-white active">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Noi_Dung.html" class="nav-link tm-nav-link tm-text-white">Nội Dung</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Tin_Tuc.html" class="nav-link tm-nav-link tm-text-white">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Lien_Lac.html" class="nav-link tm-nav-link tm-text-white">Liên lạc</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center tm-welcome-container">
+        <div class="tm-welcome">
+          <i class="fas tm-fa-big fa-music tm-fa-mb-big"></i>
+          <h1 class="text-uppercase mb-3 tm-site-name">Truyện Ngôn Tình</h1>
+          <p class="tm-site-description">Thiên Đường Mộng Mơ</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="tm-search-form-container">
+        <form action="Trang_Chu.html" method="GET" class="form-inline tm-search-form">
+          <div class="text-uppercase tm-new-release">Tìm Kiếm</div>
+          <div class="form-group tm-search-box">
+            <input type="text" name="keyword" class="form-control tm-search-input" placeholder="Tìm Kiếm Truyện ...">
+            <input type="submit" value="Tìm Kiếm" class="form-control tm-search-submit">
+          </div>
+          <div class="form-group tm-advanced-box">
+            <a href="#" class="tm-text-white">Khám phá ...</a>
+          </div>
+        </form>
+      </div>
+         <div class="row tm-mt-big tm-about-row tm-mb-medium">
+          <div class="col-xl-35 col-lg-35 col-md-35. col-xs-35 tm-contact-col">
+           <div class="tm-contact-col tm-bg-pink-light-2 tm-text-white text-center p-md-5 p-4">
+            <i class="fas fa-3x  mb-4"> </i>
+            <h2 class="tm-media-2-header">Đăng Nhập Vào Trang Web</h2>
+          </div>
+          <div class="tm-bg-gray tm-contact-middle">
+           <div class="col-xl-35 col-lg-35 col-md-35. col-xs-35 tm-contact-col">
+            <form action="#" method="post">
+              <div class="form-group mb-4">
+                <input type="text" id="login_name" name="login_name" class="form-control" placeholder="Tên Đăng Nhập" required/>
+              </div>
+              <div class="form-group mb-4">
+                <input type="password" id="login_matkhau" name="login_matkhau" class="form-control" placeholder="Mật Khẩu" required/>
+              </div>
+              <div class="form-group mb-0">
+                <button type="submit" class="btn btn-secondary">Đăng Nhập</button>
+              </div>
+            </form>
+           </div>
+        </div>
+      </div>
+     </div>
+ </div>
+            
+
+             <script src="js/jquery-3.2.1.slim.min.js"></script> <!-- https://jquery.com/ -->
+
+  <script>
+
+    /* DOM is ready
+    ------------------------------------------------*/
+    $(function () {
+
+      if (renderPage) {
+        $('body').addClass('loaded');
+      }
+
+      $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+    });
+
+  </script>
+</body>
+</html>
